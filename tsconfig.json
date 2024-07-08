@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ESNext",
+
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+
+    "lib": ["ESNext", "DOM"],
+
+    "removeComments": true,
+    "alwaysStrict": true,
+    "useDefineForClassFields": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+
+    "jsx": "react-jsx",
+
+    "allowJs": true,
+    "checkJs": true,
+
+    "noEmit": true,
+
+    "skipLibCheck": true,
+
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitOverride": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "stripInternal": true,
+
+    "sourceMap": false,
+    "declaration": false,
+    "declarationMap": false,
+
+    "resolveJsonModule": true,
+
+    "isolatedModules": true,
+
+    "outDir": "${configDir}/dist",
+
+    "plugins": [],
+    "types": ["bun"],
+
+    "paths": {
+      "command": ["./src/bot.ts"],
+      "variables": ["./src/variables.ts"],
+      "z": ["./src/z.ts"],
+      "telegram": ["./src/telegram.ts"]
+    }
+  },
+  "exclude": ["node_modules", "node_internals", "dist"]
+}

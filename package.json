@@ -1,0 +1,63 @@
+{
+  "name": "tg-remote-access",
+  "version": "0.0.1",
+  "author": {
+    "name": "Ivan Polushin",
+    "url": "https://t.me/polioan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polioan/tg-remote-access"
+  },
+  "homepage": "https://github.com/polioan/tg-remote-access#readme",
+  "bugs": {
+    "url": "https://github.com/polioan/tg-remote-access/issues"
+  },
+  "funding": "https://boosty.to/polioan",
+  "license": "MIT",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development bun --watch src/index.ts",
+    "build": "bun run build.ts",
+    "typecheck": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .ts,.js,.cts,.cjs,.mjs,.tsx,.jsx",
+    "lint:fix": "eslint . --ext .ts,.js,.cts,.cjs,.mjs,.tsx,.jsx --fix"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "node-disk-info": "^1.3.0",
+    "open": "^10.1.0",
+    "rimraf": "^5.0.8",
+    "screenshot-desktop": "^1.15.0",
+    "telegraf": "^4.16.3",
+    "uuid": "^10.0.0",
+    "wallpaper": "^7.2.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/eslint": "^8.56.10",
+    "@types/screenshot-desktop": "^1.12.3",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "eslint-config-polioan": "^1.8.4",
+    "eslint-plugin-jsdoc": "^48.5.0",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-spellcheck": "^0.0.20",
+    "eslint-plugin-typescript-enum": "^2.1.0",
+    "eslint-plugin-unicorn": "^54.0.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-jsdoc": "^1.3.0",
+    "rimraf": "^5.0.8",
+    "typescript": "^5.5.2"
+  }
+}
